@@ -1,0 +1,73 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 15%
+    width: 100%
+    padding : 40px
+    z-index : 50
+    @media only screen and (max-width: 530px)
+        padding: 20px
+    @media only screen and (max-width: 350px)
+        padding: 5px
+    &__logo 
+        display: flex
+        align-items: center
+        font-weight: bold
+        letter-spacing: 2px
+        z-index: 10
+        svg 
+            width: 9.5%
+            fill: white
+            margin-right: 10px
+            min-width: 20px 
+        h6
+            margin-left: 20px
+            @media only screen and (max-width: 450px)
+                margin-left: 5px
+    &__line
+            border: solid 1px white
+            height: 26%
+            width: 1px
+            margin-left: 20px
+            min-height: 30px    
+
+    &__menu
+        display: flex
+        z-index: 10
+        @media only screen and (max-width: 450px)
+            padding: 0
+        li
+            margin-left: 20px
+            @media only screen and (max-width: 450px)
+                margin-left: 5px 
+        
+    &__button-login
+        padding: 10px 25px
+        background: $elements-color
+        color: white
+        font-weight: bold
+        text-transform: uppercase
+        transition: all .5s
+        border-radius: 5px
+        border: 0px 
+        &:hover
+            background-color: $main-color
+        outline: 0
+    
+    &__button-register
+        padding: 10px 25px
+        background: $main-color
+        color: white
+        font-weight: bold
+        text-transform: uppercase
+        transition: all 0.5s
+        border: 0px
+        border-radius: 5px
+        &:hover
+            box-shadow: 0px 0px 15px 0px $main-color
+        outline: 0
+
+
+  
+

@@ -1,0 +1,53 @@
+.topbar
+    width: 100%
+    height: 40px
+    margin-bottom: 35px 
+    padding: 2% 2% 2%
+    
+    nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+    &__search
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        border-radius: 50px
+        padding: 0 20px
+        width: 40%
+        transition: all .4s
+        height: 55px
+        
+        svg
+            height: 15px
+            fill: #8c8d96
+        input
+            padding: 10px
+            height: 40px
+            background-color: transparent
+            color: $searchbarText-color
+            padding: 10px
+            font-weight: bold
+            font-size: 16px
+            border: none
+            outline: none
+    &__status
+        position: 'fixed'
+        display: flex
+        align-items: center
+        justify-content: center
+        background: linear-gradient(90deg,#7c83ff 30%,#7cc1ff)
+        border-radius: 10px
+        width: 11%
+        min-width: 150px
+        svg
+            fill: #fff
+            width: 30px
+            height: 25px
+            margin-right: 10px
+
+.searchbar__resoults
+    
+    
