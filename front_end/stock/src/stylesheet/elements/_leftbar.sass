@@ -1,0 +1,57 @@
+.leftbar
+    height: 100%
+    position: relative
+    width: 3.8%
+    min-width: 50px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    background-color: $light-bar-color
+    padding: 0 10px
+    &__logo
+      width: 5%
+      min-width: 40px
+      fill: $main-color
+      margin: 20px
+    &__log
+        fill: $inactive-color
+        width: 5%
+        min-width: 40px
+        cursor: pointer
+        margin: 16px
+        transition: all .4s
+        &:hover
+            fill: $main-color
+    &__menu
+        width: 100%
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding: 0
+        font-weight: 800
+        li
+            margin: 15px
+    &__menulogo
+        fill: $inactive-color
+        color : $inactive-color
+        width: 5%
+        min-width: 35px
+        cursor: pointer
+        transition: all .4s
+        &:hover
+            fill: $main-color
+    &__panel__status
+        transform: rotate(-90deg)
+        white-space: nowrap
+        font-size: 12px
+        margin-bottom: -10px
+.leftbar__lock
+    color: $inactive-color
+    &:hover
+        fill: $main-color
+        
+
+    
